@@ -1,0 +1,65 @@
+/* ./assets/css/main.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'FantaPop';
+  src: url('../fonts/FantaPop-Regular.woff2');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'FantaPop';
+  src: url('../fonts/FantaPop-Condensed.woff2');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'FantaSans';
+  src: url('../fonts/FantaSans-Regular.ttf');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'FantaSans';
+  src: url('../fonts/FantaSans-Bold.ttf');
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'FantaSans';
+  src: url('../fonts/FantaSans-UltraBold.ttf');
+  font-weight: 900;
+}
+
+
+.ball {
+  width: 13px;
+  height: 13px;
+  background: #fff;
+  position: absolute;
+  top: 250px;
+  left: 187px;
+  border-radius: 51px;
+  z-index: 2;
+  -webkit-animation: ball-y 2s;
+  -webkit-transform-origin: 50% 50%;
+  -moz-animation: ball-y 2s;
+  -moz-transform-origin: 50% 50%;
+}
+
+@-webkit-keyframes ball-y {
+  0% { -webkit-transform: translateY(-120px); -webkit-animation-timing-function: ease-in; }
+  28% { -webkit-transform: translateY(-60px); -webkit-animation-timing-function: ease-in; }
+  56% { -webkit-transform: translateY(-36px); -webkit-animation-timing-function: ease-in; }
+  84% { -webkit-transform: translateY(-25px); -webkit-animation-timing-function: ease-in; }
+  14%, 42%, 75% , 100% { -webkit-transform: translateY(0px); -webkit-animation-timing-function: ease-out; }
+}
+
+.gradient {
+  background: linear-gradient(
+    267.54deg,
+    #128dff -19.23%,
+    #193abe 12.56%,
+    #9747ff 52.01%,
+    #ff2fd1 94.98%
+  );
+}
