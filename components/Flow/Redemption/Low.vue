@@ -2,7 +2,7 @@
 
 <template>
   <div
-    class="relative min-h-screen bg-[url(public/assets/images/bg-6.jpg)] bg-cover bg-center w-full pt-[15px] text-center text-white flex justify-center items-center"
+    class="relative min-h-screen bg-[url(public/assets/images/bg-6.jpg)] bg-cover bg-center w-full pt-[15px] text-center  flex justify-center items-center"
   >
     <div
       class="absolute top-[26px] left-[12px] text-[20px]"

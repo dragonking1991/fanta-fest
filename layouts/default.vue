@@ -1,6 +1,6 @@
 <template>
   <div class="overflow-hidden">
-    <div class="max-w-[375px] m-auto font-fp text-base ">
+    <div class="max-w-[375px] m-auto text-base font-fp text-white">
       <slot />
 
       <!-- <Loading /> -->

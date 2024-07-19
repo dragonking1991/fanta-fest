@@ -32,14 +32,14 @@ const prizes = ref([
     class="relative bg-[url(public/assets/images/bg-3.jpg)] bg-cover bg-center w-full pt-[65px] text-center"
   >
     <div
-      class="absolute top-[12px] left-[12px] text-[20px] text-white"
+      class="absolute top-[12px] left-[12px] text-[20px] "
       @click="$emit('back')"
     >
       <Icon name="arrow-left" class="cursor-pointer" />
     </div>
     <div
-      class="absolute top-[12px] right-[12px] text-[25px] text-white"
-      @click="$emit('linkHistory')"
+      class="absolute top-[12px] right-[12px] text-[25px] "
+      @click="$emit('linkWalletHistory')"
     >
       <Icon name="history" />
     </div>
@@ -51,25 +51,25 @@ const prizes = ref([
     />
 
     <div class="min-h-[calc(100vh-60px)] z-10 relative">
-      <h2 class="gradient text-white text-lg font-bold p-[5px] mb-[10px]">
+      <h2 class="gradient  text-lg font-bold p-[5px] mb-[10px]">
         you’ve earned 80 points
       </h2>
-      <p class="text-white text-sx mb-[51px]">Expiring on DD/MM/YYYY</p>
+      <p class=" text-sx mb-[51px]">Expiring on DD/MM/YYYY</p>
 
-      <h3 class="text-mdx mb-[14px] text-white">Your Prizes</h3>
+      <h3 class="text-mdx mb-[14px] ">Your Prizes</h3>
 
       <div class="w-full">
         <FlowWalletSlider :list="prizes" />
       </div>
-      <p class="text-white text-sm mt-[18px] px-5 font-fs">
+      <p class=" text-sm mt-[18px] px-5 font-fs">
         Please show the QR code in your wallet to redeem this prize at Fanta
         Fest from 9 - 10 Nov 2024. Can’t go to Fanta Fest? <br />Contact us for
         Delivery here
       </p>
 
       <div class="px-[20px] pb-5 absolute bottom-3 left-0 w-full">
-        <Button type="full" variation="white">use now</Button>
-        <Button type="full" variation="black">REDEEM ANOTHER PRIZE</Button>
+        <Button type="full" variation="white" @click="$emit('linkRedemption')">use now</Button>
+        <Button type="full" variation="black" @click="$emit('linkPrizes')">REDEEM ANOTHER PRIZE</Button>
       </div>
     </div>
   </div>

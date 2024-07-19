@@ -9,7 +9,7 @@
     <div class="absolute top-[12px] left-[12px] text-[20px]" @click="$emit('back')">
       <Icon name="arrow-left" class="cursor-pointer" />
     </div>
-    <h2 class="mb-[10px] uppercase text-md text-center font-bold text-white">
+    <h2 class="mb-[10px] uppercase text-md text-center font-bold ">
       congrats! <br />you’ve got a <br />
       <span class="text-blue"> free 5GB internet package </span>
     </h2>

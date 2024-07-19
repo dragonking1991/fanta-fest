@@ -13,7 +13,7 @@ const $emit = defineEmits("select");
 
 <template>
   <Swiper
-    class="mySwiper p-4"
+    class="mySwiper"
     :modules="[Autoplay, Navigation]"
     :autoplay="false"
     :centeredSlides="true"
@@ -22,7 +22,7 @@ const $emit = defineEmits("select");
     :slidesPerView="3"
     :breakpoints="{
       '780': {
-        slidesPerView: 1,
+        slidesPerView: 3,
       },
     }"
   >
@@ -49,9 +49,9 @@ const $emit = defineEmits("select");
 
 <style scoped lang="scss">
 .swiper {
-  padding: 40px 0px;
+  padding: 40px 10px;
   @media (min-width: 780px) {
-    padding: 0 13.5px;
+    padding: 50px 10px;
   }
 }
 .swiper-slide-active{

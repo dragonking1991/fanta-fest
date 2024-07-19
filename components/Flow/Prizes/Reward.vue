@@ -10,7 +10,7 @@ const $emit = defineEmits(["back"]);
       <Icon name="arrow-left" class="cursor-pointer" />
     </div>
 
-    <h2 class="text-white text-md uppercase">
+    <h2 class=" text-md uppercase">
       congratulations!<br />
       you got a
       <span class="text-blue">FF ticket!</span>
@@ -22,8 +22,8 @@ const $emit = defineEmits(["back"]);
       day.
     </p>
 
-    <Button type="full" variation="black">REDEEM ANOTHER PRIZE</Button>
-    <Button type="full" variation="white">VIEW MY WALLET</Button>
+    <Button type="full" variation="black" @click="$emit('linkPrizes')">REDEEM ANOTHER PRIZE</Button>
+    <Button type="full" variation="white" @click="$emit('linkWallet')">VIEW MY WALLET</Button>
   </div>
 </template>
 

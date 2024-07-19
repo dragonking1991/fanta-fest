@@ -1,7 +1,7 @@
 <script setup></script>
 
 <template>
-  <div class="relative bg-[url(public/assets/images/bg-3.jpg)] bg-cover w-full pt-[15px] text-center text-white">
+  <div class="relative bg-[url(public/assets/images/bg-3.jpg)] bg-cover w-full pt-[15px] text-center ">
     <div
       class="absolute top-[26px] left-[12px] text-[20px]"
       @click="$emit('back')"

@@ -1,13 +1,13 @@
 <template>
   <div class="after-enter h-screen px-[20px]">
     <div class="relative mb-8">
-      <h2 class="text-white text-extra absolute top-[22px] left-0 w-full">
+      <h2 class=" text-extra absolute top-[22px] left-0 w-full">
         congratulations <br />
         <span class="text-vast">you’ve earned</span>
       </h2>
 
       <div
-        class="text-white absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]"
+        class=" absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]"
       >
         <span class="text-massive">80</span><br />
         <small class="text-xlx">POINTS</small>

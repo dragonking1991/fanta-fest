@@ -74,11 +74,11 @@ const list = ref([
       <Icon name="arrow-left" class="cursor-pointer" />
     </div>
 
-    <h2 class="mb-[27px] text-extra text-center font-bold text-white">
+    <h2 class="mb-[27px] text-extra text-center font-bold ">
       SUPPORT
     </h2>
 
-    <div class="text-white text-sx overflow-auto max-h-[calc(100vh-200px)] p-5">
+    <div class=" text-sx overflow-auto max-h-[calc(100vh-200px)] p-5">
       <Accordion v-for="item in list">
         <template #title>
           {{ item.title }}
@@ -88,9 +88,9 @@ const list = ref([
         </template>
       </Accordion>
     </div>
-    <div class="text-center px-5">
-      <IconArrowDown class="m-auto" />
-      <p class="text-sx text-white">Can’t find an answer for your question?</p>
+    <div class="text-center p-5 pt-3">
+      <Icon name="arrow-down" class="m-auto"/>
+      <p class="text-sx mt-[17px]">Can’t find an answer for your question?</p>
       <Button type="full" variation="black">CONTACT CALL CENTER</Button>
     </div>
   </div>

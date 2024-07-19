@@ -4,14 +4,14 @@
 
 <template>
   <div
-    class="relative bg-[url(../../public/assets/images/bg-3.jpg)] bg-cover bg-center w-full min-h-screen pt-[48px]"
+    class="relative bg-[url(../../public/assets/images/bg-3.jpg)] bg-cover bg-center w-full min-h-screen pt-[48px] px-[50px]"
   >
     <div class="absolute top-[12px] left-[12px] text-[20px]" @click="$emit('back')">
       
       <Icon name="arrow-left" class="cursor-pointer" />
     </div>
 
-    <div class="text-center text-white text-sx p-5">
+    <div class="text-center  text-sx p-5">
       <h3 class="uppercase text-blue font-bold text-xxl">
         about the <br />
         promotion
@@ -23,7 +23,7 @@
         ultrices. Quisque.
       </p>
     </div>
-    <div class="text-center text-white text-sx p-5">
+    <div class="text-center  text-sx p-5">
       <h3 class="uppercase text-blue font-bold text-xxl">how to join</h3>
       <h4 class="uppercase text-blue font-bold mt-[10px]">step 1.</h4>
       <p>Sign up to activate your wallet.</p>

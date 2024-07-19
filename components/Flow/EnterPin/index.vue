@@ -25,7 +25,7 @@ const inputHandle = () => {
       class="flex flex-col justify-around text-center h-screen px-[20px]"
     >
       <div class="">
-        <h2 class="uppercase text-large font-bold text-white mb-9">
+        <h2 class="uppercase text-large font-bold  mb-9">
           ENTER YOUR<br />
           <span class="text-blue text-huge">PIN CODE</span>
         </h2>
@@ -37,7 +37,7 @@ const inputHandle = () => {
           class="w-[315px] h-[72px] m-auto text-center text-avg text-black"
         />
 
-        <p class="font-fs text-sn text-white mt-[10px]">
+        <p class="font-fs text-sn  mt-[10px]">
           Find your pin from under Fanta bottle cap, inside Tasto packs or from
           participating fast food merchants.
         </p>
@@ -47,7 +47,7 @@ const inputHandle = () => {
         <Button type="full" :disabled="!validated" variation="black">
           NEXT
         </Button>
-        <a href="#" class="underline text-white font-fs mt-[13px]">
+        <a href="#" class="underline  font-fs mt-[13px]">
           Terms & conditions
         </a>
       </div>

@@ -1,6 +1,6 @@
 <template>
   <div class="hidden before-enter">
-    <h2 class="mb-[10px] uppercase text-big text-center font-bold text-white">
+    <h2 class="mb-[10px] uppercase text-big text-center font-bold ">
       earn the<br />
       <span class="text-blue text-huge">
         extra<br />

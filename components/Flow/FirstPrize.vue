@@ -13,7 +13,7 @@
       <div>
         <div class="px-6">
           <h3 class="text-yellow text-lg">Congraturlation</h3>
-          <p class="text-white">
+          <p class="">
             You just won a prize for being one of the 140,000 earliest
             participants
           </p>
@@ -24,7 +24,7 @@
           <img src="../../public/assets/images/voucher.png" alt="voucher" />
         </div>
         <div class="px-6">
-          <p class="text-white mb-6">
+          <p class=" mb-6">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut
           </p>
