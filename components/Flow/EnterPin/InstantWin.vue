@@ -7,7 +7,7 @@
     class="relative bg-[url(../../public/assets/images/bg-3.jpg)] bg-cover bg-center w-full min-h-screen pt-[48px]"
   >
     <div class="absolute top-[12px] left-[12px] text-[20px]" @click="$emit('back')">
-      <Icon name="arrow-left" />
+      <Icon name="arrow-left" class="cursor-pointer" />
     </div>
     <h2 class="mb-[10px] uppercase text-md text-center font-bold text-white">
       congrats! <br />you’ve got a <br />

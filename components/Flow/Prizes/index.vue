@@ -7,7 +7,7 @@
     class="relative bg-[url(../../public/assets/images/bg-3.jpg)] bg-cover bg-center w-full h-screen pt-[48px] text-center"
   >
     <div class="absolute top-[12px] left-[12px] text-[20px] text-black" @click="$emit('back')">
-      <Icon name="arrow-left" />
+      <Icon name="arrow-left" class="cursor-pointer" />
     </div>
 
     <h2 class="gradient text-white text-lg font-bold p-[5px]">

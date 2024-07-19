@@ -3,12 +3,17 @@
 
 <template>
   <div
-    class="relative bg-[url(../../public/assets/images/bg-3.jpg)] bg-cover bg-center w-full min-h-screen pt-[48px]"
+    class="relative bg-[url(../../public/assets/images/bg-3.jpg)] bg-cover bg-center w-full min-h-screen pt-[48px] pb-[90px]"
   >
     <div
       class="absolute top-0 left-0 w-full gradient p-[30px] rounded-b-[20px]"
     >
-      <Icon name="arrow-left" class="absolute top-[32px] left-[19px]" />
+      <Icon
+        name="arrow-left"
+        class="absolute top-[32px] left-[19px] cursor-pointer"
+        @click="$emit('back')"
+      />
+
       <div class="text-white text-sm text-center">
         <strong class="text-xlm uppercase font-bold">Timeline:</strong><br />
         9th - 10th Nov, 2024<br />
@@ -110,9 +115,14 @@
           </div>
         </div>
 
-        <Button variation="black" type="full" class="mt-5"
-          >Redeem Your Ticket Now</Button
+        <Button
+          variation="black"
+          type="full"
+          class="mt-5"
+          @click="$emit('linkRedeem')"
         >
+          Redeem Your Ticket Now
+        </Button>
       </div>
     </div>
   </div>

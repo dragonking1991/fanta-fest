@@ -11,6 +11,7 @@ const { type, label, modelValue, placeholder } = defineProps({
 });
 defineEmits(["update:modelValue"]);
 </script>
+
 <template>
 	<label class="block" for="">
 		<div v-if="label" class="text-sm">{{ label }}</div>

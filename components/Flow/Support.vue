@@ -71,7 +71,7 @@ const list = ref([
       class="absolute top-[12px] left-[12px] text-[20px]"
       @click="$emit('back')"
     >
-      <Icon name="arrow-left" />
+      <Icon name="arrow-left" class="cursor-pointer" />
     </div>
 
     <h2 class="mb-[27px] text-extra text-center font-bold text-white">
