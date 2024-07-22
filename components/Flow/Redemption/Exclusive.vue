@@ -2,7 +2,7 @@
 
 <template>
   <div
-    class="relative min-h-screen bg-[url(public/assets/images/bg-6.jpg)] bg-cover bg-center w-full pt-[15px] text-center  flex justify-center items-center"
+    class="relative min-h-screen bg-[url(public/assets/images/bg-6.jpg)] bg-cover bg-center w-full pt-[15px] text-center  flex justify-center items-center pb-[20%]"
   >
     <div
       class="absolute top-[26px] left-[12px] text-[20px]"
@@ -11,22 +11,24 @@
       <Icon name="arrow-left" class="cursor-pointer" />
     </div>
     <div class="w-[74%]">
-      <img
-        src="public/assets/images/image 99 (1).png"
-        alt="image"
-        class="m-auto"
-      />
+      <div class="aspect-square w-[70%] m-auto mb-5">
+        <img
+          src="public/assets/images/image 99 (1).png"
+          alt="image"
+          class="object-contain w-full h-full"
+        />
+      </div>
       <h3 class="text-xl uppercase mb-[10px]">congratulations!</h3>
       <p class="text-sm mb-5 font-fs">
-        You have redeemed your <br />[Fanta x Tasto tumbler]!<br />Do you want
+        You have redeemed your <br />[<span class="text-blue">Fanta x Tasto tumbler</span>]!<br />Do you want
         to get it now?
       </p>
 
       <div
-        class="relative gradient w-[197px] leading-[32px] m-auto text-center rounded-[20px] overflow-hidden text-blue-light"
+        class="relative gradient w-[197px] leading-[32px] m-auto text-center rounded-[20px] overflow-hidden text-blue-light font-fs text-xs"
       >
         Slide this to use now
-        <div class="absolute h-full top-0 right-0 rounded-[20px]"></div>
+        <div class="absolute h-full w-[20%] top-0 right-0 rounded-[20px] bg-white"></div>
       </div>
     </div>
     <div

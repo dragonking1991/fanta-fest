@@ -13,32 +13,32 @@
     <div class="w-[74%]">
       <h3 class="text-xl uppercase mb-[10px]">congratulations!</h3>
       <p class="text-sm mb-[10px] font-fs">
-        You have redeemed your [Tupperware Tumble]!<br />Please fill in the
+        You have redeemed your<br /> [<span class="text-blue">Tupperware Tumble</span>]!<br />Please fill in the
         details to <br />get your delivery.
       </p>
-      <form action="" class="w-[210px] m-auto mt-5">
+      <form action="" class="w-[210px] m-auto mt-5 font-fs">
         <input
           type="text"
           placeholder="Your Name"
-          class="text-xs bg-white text-black h-[22px] w-full mb-[10px]"
+          class="text-xs bg-white text-black h-[22px] w-full mb-[10px] rounded-[5px] text-center"
         />
         <input
           type="text"
           placeholder="Phone"
-          class="text-xs bg-white text-black h-[22px] w-full mb-[10px]"
+          class="text-xs bg-white text-black h-[22px] w-full mb-[10px] rounded-[5px] text-center"
         />
         <input
           type="text"
           placeholder="Address"
-          class="text-xs bg-white text-black h-[22px] w-full mb-[10px]"
+          class="text-xs bg-white text-black h-[22px] w-full mb-[10px] rounded-[5px] text-center"
         />
         <input
           type="text"
           placeholder="Note"
-          class="text-xs bg-white text-black h-[22px] w-full mb-[10px]"
+          class="text-xs bg-white text-black h-[22px] w-full mb-[10px] rounded-[5px] text-center"
         />
 
-        <button class="gradient rounded-[48px] leading-10 text-sm mt-[10px]">
+        <button class="gradient rounded-[48px] leading-10 text-sm mt-[10px] px-[41.5px] font-fp">
           submit now
         </button>
       </form>

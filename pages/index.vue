@@ -1,5 +1,5 @@
 <script setup>
-const flow = ref(-1);
+const flow = ref(11.5);
 
 const back = () => {
   flow.value = -1;
@@ -99,6 +99,11 @@ const linkRedemption = () => {
     <FlowWalletHistory v-if="flow === 10" @back="back" />
 
     <FlowRedemption v-if="flow === 11" @back="back" @linkWallet="linkWallet" />
+    <FlowRedemptionHigh v-if="flow === 11.1" @back="back" @linkWallet="linkWallet" />
+    <FlowRedemptionLow v-if="flow === 11.2" @back="back" @linkWallet="linkWallet" />
+    <FlowRedemptionDigitalCode v-if="flow === 11.3" @back="back" @linkWallet="linkWallet" />
+    <FlowRedemptionDigitalQr v-if="flow === 11.4" @back="back" @linkWallet="linkWallet" />
+    <FlowRedemptionExclusive v-if="flow === 11.5" @back="back" @linkWallet="linkWallet" />
   </TransitionGroup>
 </template>
 
