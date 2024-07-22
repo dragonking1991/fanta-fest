@@ -24,30 +24,30 @@
     </div>
 
     <div class="text-center">
-      <div class="p-1 overflow-y-auto mt-[6px] mb-[7px] px-[10px]">
+      <div class="p-1 overflow-y-auto mt-[6px] pb-[7px] px-[10px]">
         <div
           class="flex gap-[3px] uppercase font-sm text-center whitespace-nowrap"
         >
-          <span class="bg-blue px-[10px] rounded-[2px]"> All </span>
-          <span class="bg-white text-orange px-[10px] rounded-[2px]">
+          <span class="bg-blue p-[4px_10px] rounded-[2px]"> All </span>
+          <span class="bg-white text-orange p-[4px_10px] rounded-[2px]">
             Fanta Fest Experiences
           </span>
-          <span class="bg-white text-orange px-[10px] rounded-[2px]">
+          <span class="bg-white text-orange p-[4px_10px] rounded-[2px]">
             gaming
           </span>
-          <span class="bg-white text-orange px-[10px] rounded-[2px]">
+          <span class="bg-white text-orange p-[4px_10px] rounded-[2px]">
             music
           </span>
-          <span class="bg-white text-orange px-[10px] rounded-[2px]">
+          <span class="bg-white text-orange p-[4px_10px] rounded-[2px]">
             fashion
           </span>
-          <span class="bg-white text-orange px-[10px] rounded-[2px]">
+          <span class="bg-white text-orange p-[4px_10px] rounded-[2px]">
             music
           </span>
-          <span class="bg-white text-orange px-[10px] rounded-[2px]">
+          <span class="bg-white text-orange p-[4px_10px] rounded-[2px]">
             fashion
           </span>
-          <span class="bg-white text-orange px-[10px] rounded-[2px]">
+          <span class="bg-white text-orange p-[4px_10px] rounded-[2px]">
             others
           </span>
         </div>

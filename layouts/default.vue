@@ -1,9 +1,7 @@
 <template>
-  <div class="overflow-hidden">
-    <div class="max-w-[375px] m-auto text-base font-fp text-white">
-      <slot />
+  <div class="text-base font-fp text-white overflow-hidden">
+    <slot />
 
-      <!-- <Loading /> -->
-    </div>
+    <!-- <Loading /> -->
   </div>
 </template>

@@ -49,6 +49,7 @@ onMounted(() => {
       <img
         src="public/assets/images/DJ table.png"
         alt="image"
+        class="w-full"
       />
       <span class="text-sl absolute top-[50%] left-[50%] translate-x-[-50%]">Loading...</span>
     </div>
