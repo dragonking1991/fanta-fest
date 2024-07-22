@@ -34,6 +34,7 @@ module.exports = {
       'big': ['50px', '47px'],
       'vast': ['55px', '51.7px'],
       'large': ['60px', '56.4px'],
+      'enormous': ['64px', '76.8px'],
       'huge': ['70px', '65.8px'],
       'massive': ['80px', '81.6px'],
     },
