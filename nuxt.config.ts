@@ -29,6 +29,7 @@ export default defineNuxtConfig({
 
   "app": {
     // "baseURL": "/onexp-fanta-fest",
+    
     "head": {
       "link": [
         {
