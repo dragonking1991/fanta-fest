@@ -3,7 +3,7 @@
 
 <template>
   <div
-    class="relative bg-[url(../../public/assets/images/Group90591.jpg)] bg-no-repeat bg-[cover] bg-top w-full min-h-screen"
+    class="relative bg-[url(public/assets/images/Group90591.jpg)] bg-no-repeat bg-[cover] bg-top w-full min-h-screen"
   >
     <div
       class="absolute top-0 left-0 w-full gradient p-[30px] rounded-b-[20px] z-10"
@@ -39,13 +39,13 @@
             Sunday, 10th Nov<br /><strong>NUNEW | DICE | BADMIXY</strong>
           </p>
           <img
-            src="../../public/assets/images/Group 90567.png"
+            src="public/assets/images/Group 90567.png"
             alt="image"
             class="w-full mt-[10px]"
           />
         </div>
         <img
-          src="../../public/assets/images/Frame 6312375.png"
+          src="public/assets/images/Frame 6312375.png"
           alt="image"
           class="m-auto mb-[5px]"
         />
@@ -63,7 +63,7 @@
         <div class="flex gap-[10px] mb-[10px]  font-fs">
           <div class="flex-none">
             <img
-              src="../../public/assets/images/Mask group.png"
+              src="public/assets/images/Mask group.png"
               alt="image"
               class="rounded-[20px]"
             />
@@ -78,7 +78,7 @@
         <div class="flex gap-[10px] mb-[10px]  font-fs">
           <div class="flex-none">
             <img
-              src="../../public/assets/images/Mask group-1.png"
+              src="public/assets/images/Mask group-1.png"
               alt="image"
               class="rounded-[20px]"
             />
@@ -93,7 +93,7 @@
         <div class="flex gap-[10px] mb-[10px]  font-fs">
           <div class="flex-none">
             <img
-              src="../../public/assets/images/Mask group-2.png"
+              src="public/assets/images/Mask group-2.png"
               alt="image"
               class="rounded-[20px]"
             />
@@ -108,7 +108,7 @@
         <div class="flex gap-[10px] mb-[10px]  font-fs">
           <div class="flex-none">
             <img
-              src="../../public/assets/images/Mask group-3.png"
+              src="public/assets/images/Mask group-3.png"
               alt="image"
               class="rounded-[20px]"
             />

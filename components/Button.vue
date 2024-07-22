@@ -12,7 +12,6 @@ const { variation, type, disabled } = defineProps({
 });
 
 const classButton = computed(() => {
-  const classType = type === "full" ? " w-full" : "";
   let classVariation = "";
 
   switch (variation) {
@@ -29,14 +28,18 @@ const classButton = computed(() => {
       classVariation = "bg-yellow text-white";
       break;
   }
-
-  disabled && (classVariation = "bg-gray text-gray1");
-  return `${disabled} px-2 leading-10 px-6 my-2 ${classVariation} whitespace-nowrap text-center font-bold text-sm uppercase rounded-[40px] cursor-pointer ${classType}`;
+  return classVariation;
 });
 </script>
 
 <template>
-  <button :class="classButton" :disabled="disabled">
+  <button
+    :class="`leading-10 uppercase px-6 my-2 whitespace-nowrap text-center font-bold text-sm rounded-[40px] cursor-pointer
+    ${disabled ? 'bg-gray text-gray1' : classButton}
+    ${type === 'full' ? ' w-full' : ''}`
+    "
+    :disabled="disabled"
+  >
     <slot />
   </button>
 </template>

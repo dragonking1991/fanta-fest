@@ -2,7 +2,7 @@
 
 <template>
   <div
-    class="relative bg-[url(../../public/assets/images/bg-3.jpg)] bg-cover bg-center w-full min-h-screen pt-[48px] text-center"
+    class="relative bg-[url(public/assets/images/bg-3.jpg)] bg-cover bg-center w-full min-h-screen pt-[48px] text-center"
   >
     <div
       class="absolute top-[12px] left-[12px] text-[20px] text-black"
@@ -52,17 +52,17 @@
           </span>
         </div>
       </div>
-      <p class="font-fs text-xs mb-[3px]">
+      <p class="font-fs text-xs mb-[5px]">
         Redeem your Fanta Fest exclusive experience now and enjoy it<br />
         at Fanta Fest on 9-10 Nov 2024.
       </p>
 
       <div
-        class="overflow-auto max-h-[250px] flex flex-wrap gap-[9.31px] px-[30px] mx-[10px] pb-[10px]"
+        class="overflow-auto max-h-[35vh] flex flex-wrap gap-[9.31px] px-[30px] mx-[10px] pb-[10px]"
       >
         <div
           class="bg-white aspect-square w-[30%] text-xs rounded-[16px] p-3"
-          v-for="n in 12"
+          v-for="n in 24"
           :key="n"
         >
           <div class="aspect-[76/50]">

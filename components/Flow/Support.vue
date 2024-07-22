@@ -65,7 +65,7 @@ const list = ref([
 
 <template>
   <div
-    class="relative bg-[url(../../public/assets/images/bg-3.jpg)] bg-cover bg-center w-full min-h-screen pt-[48px]"
+    class="relative bg-[url(public/assets/images/bg-3.jpg)] bg-cover bg-center w-full min-h-screen pt-[48px]"
   >
     <div
       class="absolute top-[12px] left-[12px] text-[20px]"

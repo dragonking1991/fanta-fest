@@ -29,6 +29,16 @@
   src: url('../fonts/FantaSans-UltraBold.ttf');
   font-weight: 900;
 }
+@font-face {
+  font-family: 'TCCCUnity';
+  src: url('../fonts/TCCCUnity-Bold.ttf');
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'TCCCUnity';
+  src: url('../fonts/TCCCUnity-Regular.ttf');
+  font-weight: 400;
+}
 
 
 .ball {
@@ -62,4 +72,14 @@
     #9747ff 52.01%,
     #ff2fd1 94.98%
   );
+}
+
+.flow-enter-active,
+.flow-leave-active {
+  transition: opacity 0.1s ease;
+}
+
+.flow-enter-from,
+.flow-leave-to {
+  opacity: 0;
 }

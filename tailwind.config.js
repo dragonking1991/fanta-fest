@@ -15,13 +15,15 @@ module.exports = {
       sx: ['12px', '14.59px'],
       sn: ['13px', '15.6px'],
       sm: ['14px', '17.02px'],
-      base: ['16px', '24px'],
+      sl: ['15px', '14.1px'],
+      base: ['16px', '15.04px'],
       lg: ['20px', '22px'],
       xl: ['24px', '26.4px'],
       xlm: ['25px', '32px'],
       '2xl': ['28px', '36px'],
       'xlx': ['30px', '36px'],
       'xxl': ['32px', '36px'],
+      'mdi': ['34px', '31.96px'],
       'mdx': ['35px', '42px'],
       'md': ['36px', '36px'],
       'avg': ['40px', '42.3px'],
@@ -37,6 +39,7 @@ module.exports = {
       fontFamily: {
         'fs': ['FantaSan', 'Helvetica', 'Arial', 'sans-serif'],
         'fp': ['FantaPop', 'Helvetica', 'Arial', 'sans-serif'],
+        'tccc': ['TCCCUnity', 'Helvetica', 'Arial', 'sans-serif'],
       },
 
       lineHeight: {

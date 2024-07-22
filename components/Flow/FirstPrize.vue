@@ -5,7 +5,7 @@
 <template>
   <div class="text-center bg-green relative h-screen relative overflow-auto">
     <img
-      src="../../public/assets/images/image32.png"
+      src="public/assets/images/image32.png"
       alt="bg"
       class="absolute top-0 left-0 w-full"
     />
@@ -19,9 +19,9 @@
           </p>
         </div>
         <div
-          class="bg-[url(../../public/assets/images/image44.png)] bg-center w-full aspect-[376/596] flex justify-center items-center mt-[-35%] mb-[-20%]"
+          class="bg-[url(public/assets/images/image44.png)] bg-center w-full aspect-[376/596] flex justify-center items-center mt-[-35%] mb-[-20%]"
         >
-          <img src="../../public/assets/images/voucher.png" alt="voucher" />
+          <img src="public/assets/images/voucher.png" alt="voucher" />
         </div>
         <div class="px-6">
           <p class=" mb-6">

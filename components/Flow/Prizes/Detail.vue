@@ -4,7 +4,7 @@ const $emit = defineEmits(["back"]);
 
 <template>
   <div
-    class="relative bg-[url(../../public/assets/images/bg-3.jpg)] bg-cover bg-center w-full h-screen pt-[48px] text-center"
+    class="relative bg-[url(public/assets/images/bg-3.jpg)] bg-cover bg-center w-full h-screen pt-[48px] text-center"
   >
     <div
       class="absolute top-[12px] left-[12px] text-[20px] text-black"
@@ -19,11 +19,11 @@ const $emit = defineEmits(["back"]);
     </h2>
 
     <div
-      class="gradient text-center h-[50vh] px-[20px] absolute bottom-0 left-0 w-full rounded-t-[20px] pt-[15%]"
+      class="gradient text-center h-[50vh] px-[20px] absolute bottom-0 left-0 w-full rounded-t-[20px] pt-[20%]"
     >
-      <div class="absolute bottom-[85%] left-[50%] translate-x-[-50%] aspect-square w-[50%]">
+      <div class="absolute bottom-[75%] left-[50%] translate-x-[-50%] aspect-square w-[60%]">
         <img
-          src="public/assets/images/image 99.png"
+          src="public/assets/images/image 57.png"
           alt="image"
           class="object-contain w-full h-full"
         />

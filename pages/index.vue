@@ -1,5 +1,6 @@
 <script setup>
 const flow = ref(-1);
+
 const back = () => {
   flow.value = -1;
 };
@@ -42,53 +43,63 @@ const linkRedemption = () => {
 </script>
 
 <template>
-  <FlowMain
-    v-if="flow === -1"
-    @linkHow="linkHow"
-    @linkSupport="linkSupport"
-    @linkAbout="linkAbout"
-    @linkLeaderBoard="linkLeaderBoard"
-    @linkEnterPin="linkEnterPin"
-    @linkProfile="linkEnterPin"
-    @linkPrizes="linkPrizes"
-    @linkWallet="linkWallet"
-  />
+  <TransitionGroup name="flow">
+    <FlowCounter v-if="flow === -2" />
 
-  <FlowHow v-if="flow === 0" @back="back" />
-  <FlowSupport v-if="flow === 1" @back="back" />
-  <FlowAbout v-if="flow === 2" @back="back" @linkPrizes="linkPrizes" />
-  <FlowLeaderBoard v-if="flow === 3" @back="back" />
-  <FlowEnterPin v-if="flow === 4" @back="back" />
+    <FlowMain
+      v-if="flow === -1"
+      @linkHow="linkHow"
+      @linkSupport="linkSupport"
+      @linkAbout="linkAbout"
+      @linkLeaderBoard="linkLeaderBoard"
+      @linkEnterPin="linkEnterPin"
+      @linkProfile="linkEnterPin"
+      @linkPrizes="linkPrizes"
+      @linkWallet="linkWallet"
+    />
 
-  <FlowPrizes
-    v-if="flow === 5"
-    @back="back"
-    @linkPrizesDetail="linkPrizesDetail"
-  />
-  <FlowPrizesDetail
-    v-if="flow === 6"
-    @back="back"
-    @linkPrizesReward="linkPrizesReward"
-  />
+    <FlowHow v-if="flow === 0" @back="back" @linkEnterPin="linkEnterPin" />
+    <FlowSupport v-if="flow === 1" @back="back" />
+    <FlowAbout v-if="flow === 2" @back="back" @linkPrizes="linkPrizes" />
 
-  <FlowPrizesReward
-    v-if="flow === 8"
-    @back="back"
-    @linkPrizes="linkPrizes"
-    @linkWallet="linkWallet"
-  />
-  <FlowPrizesForm v-if="flow === 7" @back="back" />
+    <FlowLeaderBoard v-if="flow === 3" @back="back" />
+    <FlowAnnouncement v-if="flow === 3.1" @back="back" />
 
-  <FlowWallet
-    v-if="flow === 9"
-    @back="back"
-    @linkPrizes="linkPrizes"
-    @linkWalletHistory="linkWalletHistory"
-    @linkRedemption="linkRedemption"
-  />
-  <FlowWalletHistory v-if="flow === 10" @back="back" />
+    <FlowEnterPin v-if="flow === 4" @back="back" @linkPrizes="linkPrizes"/>
 
-  <FlowRedemption v-if="flow === 11" @back="back" @linkWallet="linkWallet" />
+    <FlowPrizes
+      v-if="flow === 5"
+      @back="back"
+      @linkPrizesDetail="linkPrizesDetail"
+    />
+
+    <FlowPrizesDetail
+      v-if="flow === 6"
+      @back="back"
+      @linkPrizesReward="linkPrizesReward"
+    />
+
+    <FlowPrizesReward
+      v-if="flow === 8"
+      @back="back"
+      @linkPrizes="linkPrizes"
+      @linkWallet="linkWallet"
+    />
+
+    <FlowPrizesForm v-if="flow === 7" @back="back" />
+
+    <FlowWallet
+      v-if="flow === 9"
+      @back="back"
+      @linkPrizes="linkPrizes"
+      @linkWalletHistory="linkWalletHistory"
+      @linkRedemption="linkRedemption"
+    />
+
+    <FlowWalletHistory v-if="flow === 10" @back="back" />
+
+    <FlowRedemption v-if="flow === 11" @back="back" @linkWallet="linkWallet" />
+  </TransitionGroup>
 </template>
 
 <style scoped lang="scss"></style>
