@@ -28,7 +28,7 @@ export default defineNuxtConfig({
   },
 
   "app": {
-    "baseURL": "/onexp-th-sprite-heat-hack",
+    "baseURL": "/onexp-fanta-fest",
     "head": {
       "link": [
         {
