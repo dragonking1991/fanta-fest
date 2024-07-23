@@ -1,5 +1,5 @@
 <script setup>
-const flow = ref(4);
+const flow = ref(-1);
 
 const back = () => {
   flow.value = -1;
@@ -71,6 +71,7 @@ const linkRedemption = () => {
       v-if="flow === 5"
       @back="back"
       @linkPrizesDetail="linkPrizesDetail"
+      @linkPrizesReward="linkPrizesReward"
     />
 
     <FlowPrizesDetail

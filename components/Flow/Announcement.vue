@@ -17,8 +17,9 @@
 
     <div class="text-sx pt-7 text-center px-[40px] max-w-[548px] mx-auto">
       <ImgHolder
-        src="public/assets/images/Group 90546.png"
-        class="m-auto mb-6 dk:mb-10 w-[50%] dk:w-[336px] aspect-[336/280]"
+        src="assets/images/Group 90546.png"
+        class="m-auto mb-6 dk:mb-10 w-[50%] dk:w-[336px]"
+        aspect="[336/280]"
       />
       <h3 class="text-xlm">you’ve won a PLAY STATION 5</h3>
       <p class="text-sx dk:text-base font-fs">

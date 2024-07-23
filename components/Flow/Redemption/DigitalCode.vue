@@ -4,12 +4,11 @@
   <div
     class="relative min-h-screen bg-[url(public/assets/images/bg-6.jpg)] bg-cover bg-center w-full pt-[15px] text-center flex justify-center items-center pb-[15%]"
   >
-    <div
-      class="absolute top-[26px] left-[12px] text-[20px]"
+    <Icon
+      name="arrow-left"
+      class="cursor-pointer absolute top-[12px] left-[12px] dk:top-7 dk:left-[33px] text-[20px] dk:text-[30px]"
       @click="$emit('back')"
-    >
-      <Icon name="arrow-left" class="cursor-pointer" />
-    </div>
+    />
     <div class="w-[74%]">
       <div class="aspect-rect w-[80%] m-auto">
         <img

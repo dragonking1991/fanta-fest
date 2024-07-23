@@ -61,11 +61,10 @@ onMounted(() => {
     <div
       class="absolute bottom-0 left-0 w-full z-20 dk:h-[168px] overflow-hidden"
     >
-      <div></div>
       <img src="public/assets/images/DJ table.png" alt="image" class="w-full" />
-      <span class="text-sl absolute top-[50%] left-[50%] translate-x-[-50%]"
-        >Loading...</span
-      >
+      <span class="text-sl absolute top-[50%] left-[50%] translate-x-[-50%]">
+        Loading...
+      </span>
     </div>
   </div>
 </template>

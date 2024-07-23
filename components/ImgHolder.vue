@@ -15,7 +15,7 @@ const ratio = computed(() => {
 <template>
   <div :class="ratio">
     <img
-      src="public/assets/images/image 99.png"
+      :src="src"
       alt="image"
       class="object-contain w-full h-full"
     />

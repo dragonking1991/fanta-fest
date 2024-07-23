@@ -31,7 +31,7 @@ onMounted(() => {
         class="flex flex-col justify-around dk:justify-center text-center h-screen px-[20px] pt-[48px]"
       >
         <div
-          class="absolute top-[12px] left-[12px] text-[20px] text-black"
+          class="absolute top-[12px] left-[12px] dk:top-7 dk:left-[33px] text-[20px] text-black"
           @click="$emit('back')"
         >
           <Icon name="arrow-left" class="cursor-pointer" />
