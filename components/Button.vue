@@ -34,7 +34,7 @@ const classButton = computed(() => {
 
 <template>
   <button
-    :class="`leading-10 uppercase px-6 my-2 whitespace-nowrap text-center font-bold text-sm rounded-[40px] cursor-pointer
+    :class="`max-w-[280px] leading-10 dk:left-10 uppercase px-6 my-2 whitespace-nowrap text-center font-bold text-sm dk:text-base dk:leading-10 rounded-[40px] cursor-pointer
     ${disabled ? 'bg-gray text-gray1' : classButton}
     ${type === 'full' ? ' w-full' : ''}`
     "

@@ -38,7 +38,7 @@
           class="text-xs bg-white text-black h-[22px] w-full mb-[10px] rounded-[5px] text-center"
         />
 
-        <button class="gradient rounded-[48px] leading-10 text-sm mt-[10px] px-[41.5px] font-fp">
+        <button class="gradient rounded-[48px] leading-10 text-sm dk:text-base mt-[10px] px-[41.5px] font-fp">
           submit now
         </button>
       </form>

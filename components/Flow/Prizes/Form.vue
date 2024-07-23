@@ -46,7 +46,7 @@ const $emit = defineEmits(["back"]);
         />
 
         <button
-          class="gradient rounded-[48px] leading-10 text-sm mt-[10px] w-[150px] m-auto"
+          class="gradient rounded-[48px] leading-10 text-sm dk:text-base mt-[10px] w-[150px] m-auto"
         >
           Submit
         </button>

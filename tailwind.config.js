@@ -10,13 +10,24 @@ module.exports = {
     './error.vue',
   ],
   theme: {
+    container: {
+      padding: '16px',
+      center: true,
+      screens: {
+        DEFAULT: '375px',
+        dk: '1088px',
+      },
+    },
+    screens: {
+      'dk': '1088px',
+    },
     fontSize: {
       xs: ['10px', '12px'],
       sx: ['12px', '14.59px'],
       sn: ['13px', '15.6px'],
       sm: ['14px', '17.02px'],
       sl: ['15px', '14.1px'],
-      base: ['16px', '15.04px'],
+      base: ['16px', '19.46px'],
       bl: ['18px', '21.89px'],
       lg: ['20px', '22px'],
       xl: ['24px', '26.4px'],
@@ -29,6 +40,7 @@ module.exports = {
       'md': ['36px', '36px'],
       'mdm': ['38px', '35.72px'],
       'avg': ['40px', '42.3px'],
+      'ext': ['44px', '42.3px'],
       'extra': ['45px', '42.3px'],
       'ex': ['46px', '43.24px'],
       'big': ['50px', '47px'],
@@ -37,6 +49,7 @@ module.exports = {
       'enormous': ['64px', '76.8px'],
       'huge': ['70px', '65.8px'],
       'massive': ['80px', '81.6px'],
+      'expansive': ['88px', '82.72px'],
     },
     extend: {
       fontFamily: {
@@ -62,7 +75,7 @@ module.exports = {
       textShadow: {
         sm: '0 1px 2px #000000',
         DEFAULT: '0 2px 4px #000000',
-        lg: '0 8px 16px #000000',
+        dk: '0 8px 16px #000000',
       },
       "shadow": {
         default: "0px 8px 16px 0px #000000;",

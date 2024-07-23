@@ -39,42 +39,72 @@ onMounted(() => {
 </script>
 <template>
   <div
-    class="relative bg-[url(public/assets/images/bg-0.jpg)] bg-cover bg-center w-full min-h-screen"
+    class="relative bg-[url(public/assets/images/bg-0.jpg)] dk:bg-[url(public/assets/images/dk/Countdown.jpg)] bg-cover bg-center"
   >
-    <div
-      class="p-6 absolute bottom-5 left-[50%] translate-x-[-50%] w-[100%] text-black"
-    >
-      <div class="bg-white rounded-[16px] shadow p-6 font-tccc">
-        <h3 class="text-xl capitalize font-bold mt-7 mb-8">Fanta fest</h3>
-        <div class="text-xl flex justify-start mb-8 text-center">
+    <div class="container flex items-end dk:items-center min-h-screen pb-6">
+      <div class="p-0 text-black dk:flex w-full dk:w-[50%]">
+        <div
+          class="bg-white rounded-[16px] shadow p-6 dk:p-[64px] font-tccc dk:min-h-[80vh] dk:flex flex-col justify-between w-full"
+        >
           <div>
-            <strong> {{ timeCounter.hours }} </strong><br />
-            <span class="text-xs"> Days </span>
+            <p class="text-xl uppercase font-bold mt-7 mb-8 hidden dk:block">
+              Coming soon!
+            </p>
+            <h3 class="text-xl capitalize font-bold mt-7 mb-8">Fanta fest</h3>
           </div>
-          <div class="mx-2">:</div>
+
           <div>
-            <strong> {{ timeCounter.hours }} </strong><br />
-            <span class="text-xs"> Hrs </span>
-          </div>
-          <div class="mx-2">:</div>
-          <div>
-            <strong> {{ timeCounter.minutes }} </strong><br />
-            <span class="text-xs"> Min </span>
-          </div>
-          <div class="mx-2">:</div>
-          <div>
-            <strong> {{ timeCounter.seconds }} </strong><br />
-            <span class="text-xs"> Sec </span>
+            <div class="text-xl flex justify-start mb-8 text-center">
+              <div>
+                <strong> {{ timeCounter.hours }} </strong><br />
+                <span class="text-xs"> Days </span>
+              </div>
+              <div class="mx-2">:</div>
+              <div>
+                <strong> {{ timeCounter.hours }} </strong><br />
+                <span class="text-xs"> Hrs </span>
+              </div>
+              <div class="mx-2">:</div>
+              <div>
+                <strong> {{ timeCounter.minutes }} </strong><br />
+                <span class="text-xs"> Min </span>
+              </div>
+              <div class="mx-2">:</div>
+              <div>
+                <strong> {{ timeCounter.seconds }} </strong><br />
+                <span class="text-xs"> Sec </span>
+              </div>
+            </div>
+            <Button
+              class="mb-4 font-tccc border-2 border-black capitalize"
+              type="full"
+              variation="white"
+              @click="$emit('login')"
+            >
+              Add to Calendar
+            </Button>
           </div>
         </div>
-        <Button
-          class="mb-4 font-tccc border-2 border-black capitalize"
-          type="full"
-          variation="white"
-          @click="$emit('login')"
-        >
-          Add to Calendar
-        </Button>
+      </div>
+      <div class="hidden dk:block w-[50%] relative text-center">
+        <img
+          src="public/assets/images/dk/bg-bottle2.png"
+          alt="image"
+          class="absolute top-[50%] translate-y-[-50%] right-0 w-full"
+        />
+        <div class="w-[346px] m-auto relative">
+            <div class="aspect-rect w-[95%] m-auto mb-4">
+              <img
+                src="public/assets/images/dk/image 71.png"
+                alt="image"
+                class="object-contain w-full h-full"
+              />
+            </div>
+            <h3 class="text-xxl dk:text-ext leading-[0.8] mb-[62px]">
+              SO SO EXTRA<br />
+              <small class="text-lg dk:text-2xl">FOOD.MUSIC.GAMING</small>
+            </h3>
+          </div>
       </div>
     </div>
   </div>

@@ -61,7 +61,7 @@ const prizes = ref([
       <div class="w-full">
         <FlowWalletSlider :list="prizes" />
       </div>
-      <p class=" text-sm mt-[18px] px-5 font-fs">
+      <p class=" text-sm dk:text-base mt-[18px] px-5 font-fs">
         Please show the QR code in your wallet to redeem this prize at Fanta
         Fest from 9 - 10 Nov 2024. Can’t go to Fanta Fest? <br />Contact us for
         Delivery here
