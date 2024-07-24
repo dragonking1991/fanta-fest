@@ -1,32 +1,45 @@
-<script setup></script>
+<script setup>
+const inputCode = ref(null);
+const copied = ref(false);
+const copyText = () => {
+  clipboardText(inputCode.value,() =>{
+    copied.value = true
+  });
+};
+</script>
 
 <template>
-  <div
-    class="relative min-h-screen bg-[url(public/assets/images/bg-6.jpg)] bg-cover bg-center w-full pt-[15px] text-center flex justify-center items-center pb-[15%]"
-  >
-    <Icon
-      name="arrow-left"
-      class="cursor-pointer absolute top-[12px] left-[12px] dk:top-7 dk:left-[33px] text-[20px] dk:text-[30px]"
-      @click="$emit('back')"
+  <FlowRedemption>
+    <ImgHolder
+      src="assets/images/image 57.png"
+      class="m-[0_auto_10px] w-[90%] max-w-[336px]"
+      
     />
-    <div class="w-[74%]">
-      <div class="aspect-rect w-[80%] m-auto">
-        <img
-          src="public/assets/images/image 57.png"
-          alt="image"
-          class="object-contain w-full h-full"
-        />
-      </div>
-      <h3 class="text-xl uppercase mb-[10px]">congratulations!</h3>
-      <p class="text-sm mb-[10px] font-fs">
-        You have redeemed your <br />[<span class="text-blue">Prize</span>]!<br />Please use this code to activate your reward.
-      </p>
-      <input type="text" class="w-[143px] h-[44px] bg-white text-orange text-xlm rounded-[5px] text-center" value="SV545D" />
+    <h3 class="text-xl dk:text-xxl uppercase mb-[10px] dk:mb-4">
+      congratulations!
+    </h3>
+    <p class="text-sm dk:text-base mb-[10px] font-fs max-w-[400px] mx-auto">
+      You have redeemed your <br class="dk:hidden" />[
+      <span class="text-blue">Prize </span>]!<br />Please use this code to
+      activate your reward.
+    </p>
+
+    <div class="relative mx-auto w-[143px] text-orange" @click="copyText">
+      <Icon
+        name="copy"
+        class="absolute top-[10px] right-[15px] text-[15px] text-gray z-10"
+        :class="copied ? 'text-white' : 'text-gray'"
+      />
+      <input
+        readonly="true"
+        ref="inputCode"
+        type="text"
+        class="w-[143px] h-[44px] bg-white text-orange text-xlm rounded-[5px] text-center cursor-pointer"
+        :class="copied ? 'bg-blue-light' : 'bg-white'"
+        value="SV545D"
+      />
     </div>
-    <div class="absolute bottom-[10%] left-0 w-full flex justify-center px-[15%]">
-      <Button variation="white" type="full" class="">back to your wallet</Button>
-    </div>
-  </div>
+  </FlowRedemption>
 </template>
 
 <style scoped lang="scss"></style>

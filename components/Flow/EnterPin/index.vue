@@ -25,17 +25,21 @@ onMounted(() => {
   >
     <TransitionGroup name="flow">
       <FlowEnterPinWelcome v-if="state === 0" />
-      <FlowEnterPinNext v-if="state === 2" @linkPrizes="$emit('linkPrizes')" @enterPin="state = 1" :process="70" />
+      <FlowEnterPinNext
+        v-if="state === 2"
+        @linkPrizes="$emit('linkPrizes')"
+        @enterPin="state = 1"
+        :process="70"
+      />
       <div
         v-if="state === 1"
         class="flex flex-col justify-around dk:justify-center text-center h-screen px-[20px] pt-[48px]"
       >
-        <div
-          class="absolute top-[12px] left-[12px] dk:top-7 dk:left-[33px] text-[20px] text-black"
+        <Icon
+          name="arrow-left"
+          class="text-white cursor-pointer absolute top-[12px] left-[12px] dk:top-7 dk:left-[33px] text-[20px] dk:text-[30px]"
           @click="$emit('back')"
-        >
-          <Icon name="arrow-left" class="cursor-pointer" />
-        </div>
+        />
         <div class="dk:mb-10 max-w-[400px] mx-auto">
           <h2 class="uppercase dk:text-enormous text-large font-bold mb-9">
             ENTER YOUR<br />

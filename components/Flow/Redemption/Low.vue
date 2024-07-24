@@ -1,55 +1,44 @@
 <script setup></script>
 
 <template>
-  <div
-    class="relative min-h-screen bg-[url(public/assets/images/bg-6.jpg)] bg-cover bg-center w-full pt-[15px] text-center  flex justify-center items-center"
-  >
-    <Icon
-      name="arrow-left"
-      class="cursor-pointer absolute top-[12px] left-[12px] dk:top-7 dk:left-[33px] text-[20px] dk:text-[30px]"
-      @click="$emit('back')"
-    />
-    <div class="w-[74%]">
-      <h3 class="text-xl uppercase mb-[10px]">congratulations!</h3>
-      <p class="text-sm mb-[10px] font-fs">
-        You have redeemed your<br /> [<span class="text-blue">Tupperware Tumble</span>]!<br />Please fill in the
-        details to <br />get your delivery.
-      </p>
-      <form action="" class="w-[210px] m-auto mt-5 font-fs">
+  <FlowRedemption>
+    <h3 class="text-xl dk:text-enormous uppercase mb-[10px] dk:mb-[30px]">
+      congratulations!
+    </h3>
+    <p class="text-sm dk:text-base mb-[10px] font-fs max-w-[400px] mx-auto dk:mb-4">
+      You have redeemed your<br class="dk:hidden" />
+      [<span class="text-blue">Tupperware Tumble</span>]!<br />Please fill in
+      the details to <br class="dk:hidden" />get your delivery.
+    </p>
+    <form action="" class="w-[210px] dk:w-[400px] m-auto font-xs">
         <input
           type="text"
           placeholder="Your Name"
-          class="text-xs bg-white text-black h-[22px] w-full mb-[10px] rounded-[5px] text-center"
+          class="text-xs dk:text-sm bg-white text-black h-[22px] dk:h-[41px] w-full mb-[10px] text-center rounded-[5px] font-fs"
         />
         <input
           type="text"
           placeholder="Phone"
-          class="text-xs bg-white text-black h-[22px] w-full mb-[10px] rounded-[5px] text-center"
+          class="text-xs dk:text-sm bg-white text-black h-[22px] dk:h-[41px] w-full mb-[10px] text-center rounded-[5px] font-fs"
         />
         <input
           type="text"
           placeholder="Address"
-          class="text-xs bg-white text-black h-[22px] w-full mb-[10px] rounded-[5px] text-center"
+          class="text-xs dk:text-sm bg-white text-black h-[22px] dk:h-[41px] w-full mb-[10px] text-center rounded-[5px] font-fs"
         />
         <input
           type="text"
           placeholder="Note"
-          class="text-xs bg-white text-black h-[22px] w-full mb-[10px] rounded-[5px] text-center"
+          class="text-xs dk:text-sm bg-white text-black h-[22px] dk:h-[41px] w-full mb-[10px] text-center rounded-[5px] font-fs"
         />
 
-        <button class="gradient rounded-[48px] leading-10 text-sm dk:text-base mt-[10px] px-[41.5px] font-fp">
-          submit now
+        <button
+          class="gradient rounded-[48px] leading-10 dk:leading-10 text-sm dk:text-base mt-[10px] w-[150px] m-auto"
+        >
+          Submit
         </button>
       </form>
-    </div>
-    <div
-      class="absolute bottom-[10%] left-0 w-full flex justify-center px-[15%]"
-    >
-      <Button variation="white" type="full" class=""
-        >back to your wallet</Button
-      >
-    </div>
-  </div>
+  </FlowRedemption>
 </template>
 
 <style scoped lang="scss"></style>

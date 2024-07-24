@@ -4,20 +4,12 @@ const { src, aspect } = defineProps({
     default: "",
   },
   aspect: {
-    default: "square",
+    default: "",
   },
 });
-const ratio = computed(() => {
-  return `aspect-${aspect}`;
-});
-
 </script>
 <template>
-  <div :class="ratio">
-    <img
-      :src="src"
-      alt="image"
-      class="object-contain w-full h-full"
-    />
+  <div :class="aspect ? `aspect-[${aspect}]` : 'aspect-[336/280]'">
+    <img :src="src" alt="image" class="object-contain w-full h-full" />
   </div>
 </template>

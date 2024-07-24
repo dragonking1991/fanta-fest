@@ -8,20 +8,18 @@ const $emit = defineEmits(["back"]);
   >
     <Icon
       name="arrow-left"
-      class="cursor-pointer absolute top-[12px] left-[12px] dk:top-7 dk:left-[33px] text-[20px] dk:text-[30px]"
+      class="text-white cursor-pointer absolute top-[12px] left-[12px] dk:top-7 dk:left-[33px] text-[20px] dk:text-[30px]"
       @click="$emit('back')"
     />
 
     <div>
       <h2 class="text-avg dk:text-enormous uppercase mb-[30px]">congratulations!</h2>
-
       <p class="text-sm mb-5 dk:mb-[30px] font-fs dk:text-base">
         You have redeemed your<br />
         <span class="text-blue">[Tupperware Tumble]</span>! <br />Fill up the
         form and we will deliver <br />your prize to you!<br /> Delivery will take
         between X -X working days.
       </p>
-
       <form action="" class="w-[210px] dk:w-[400px] m-auto font-xs">
         <input
           type="text"

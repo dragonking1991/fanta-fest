@@ -6,7 +6,7 @@
   >
     <Icon
       name="arrow-left"
-      class="cursor-pointer absolute top-[12px] left-[12px] dk:top-7 dk:left-[33px] text-[20px] dk:text-[30px]"
+      class="cursor-pointer absolute top-[12px] left-[12px] dk:top-7 dk:left-[33px] text-[20px] dk:text-[30px] text-white"
       @click="$emit('back')"
     />
 
@@ -19,7 +19,7 @@
     <ImgHolder
       src="assets/images/image 99.png"
       class="m-[22px_auto_10px] w-[90%] max-w-[336px]"
-      aspect="[336/280]"
+      
     />
 
     <div class="mt-[10px] px-5">

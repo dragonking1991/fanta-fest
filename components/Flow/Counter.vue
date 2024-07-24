@@ -46,33 +46,31 @@ onMounted(() => {
         <div
           class="bg-white rounded-[16px] shadow p-6 dk:p-[64px] font-tccc dk:min-h-[80vh] dk:flex flex-col justify-between w-full"
         >
-          <div>
-            <p class="text-xl uppercase font-bold mt-7 mb-8 hidden dk:block">
-              Coming soon!
-            </p>
-            <h3 class="text-xl capitalize font-bold mt-7 mb-8">Fanta fest</h3>
+          <div class="dk:h-[256px] mb-8">
+            <p class="text-sx uppercase font-bold">Coming soon!</p>
+            <h3 class="text-2xl capitalize font-bold mt-2 mb-8">Fanta fest</h3>
           </div>
 
           <div>
-            <div class="text-xl flex justify-start mb-8 text-center">
+            <div class="text-xl flex justify-start mb-6 text-center">
               <div>
                 <strong> {{ timeCounter.hours }} </strong><br />
-                <span class="text-xs"> Days </span>
+                <span class="text-sx"> Days </span>
               </div>
               <div class="mx-2">:</div>
               <div>
                 <strong> {{ timeCounter.hours }} </strong><br />
-                <span class="text-xs"> Hrs </span>
+                <span class="text-sx"> Hrs </span>
               </div>
               <div class="mx-2">:</div>
               <div>
                 <strong> {{ timeCounter.minutes }} </strong><br />
-                <span class="text-xs"> Min </span>
+                <span class="text-sx"> Min </span>
               </div>
               <div class="mx-2">:</div>
               <div>
                 <strong> {{ timeCounter.seconds }} </strong><br />
-                <span class="text-xs"> Sec </span>
+                <span class="text-sx"> Sec </span>
               </div>
             </div>
             <Button
@@ -86,25 +84,23 @@ onMounted(() => {
           </div>
         </div>
       </div>
-      <div class="hidden dk:block w-[50%] relative text-center">
+      <div class="absolute top-0 right-[12%] hidden dk:block w-[466px] text-center pt-[86px]">
         <img
           src="public/assets/images/dk/bg-bottle2.png"
           alt="image"
-          class="absolute top-[50%] translate-y-[-50%] right-0 w-full"
+          class="absolute top-0 left-0 w-full"
         />
-        <div class="w-[346px] m-auto relative">
-            <div class="aspect-rect w-[95%] m-auto mb-4">
-              <img
-                src="public/assets/images/dk/image 71.png"
-                alt="image"
-                class="object-contain w-full h-full"
-              />
-            </div>
-            <h3 class="text-xxl dk:text-ext leading-[0.8] mb-[62px]">
-              SO SO EXTRA<br />
-              <small class="text-lg dk:text-2xl">FOOD.MUSIC.GAMING</small>
-            </h3>
-          </div>
+        <div class="w-[346px] m-auto relative pl-[10%]">
+          <ImgHolder
+            src="assets/images/dk/image 71.png"
+            aspect="362/346"
+            class="m-auto mb-4"
+          />
+          <h3 class="text-xxl dk:text-ext leading-[0.8] mb-[62px]">
+            SO SO EXTRA<br />
+            <small class="text-lg dk:text-2xl">FOOD.MUSIC.GAMING</small>
+          </h3>
+        </div>
       </div>
     </div>
   </div>

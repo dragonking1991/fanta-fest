@@ -11,6 +11,20 @@ export const getRandom = (max, min = 0) => {
   const seed = now % (max + min + 1);
   return seed - min;
 }
+
+export const clipboardText = async (input, fallback) => {
+  if (input) {
+    try {
+      input.select();
+      input.setSelectionRange(0, 99999);
+      await navigator.clipboard.writeText(input.value);
+      fallback()
+      console.log('copied ', input.value);
+    } catch (err) {
+      console.error('Failed to copy: ', err);
+    }
+  }
+}
 export const getRandomColor = () => {
   const red = getRandom(255);
   const green = getRandom(255 - 1);

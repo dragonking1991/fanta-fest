@@ -8,7 +8,7 @@ const $emit = defineEmits(["back"]);
   >
     <Icon
       name="arrow-left"
-      class="cursor-pointer absolute top-[12px] left-[12px] dk:top-7 dk:left-[33px] text-[20px] dk:text-[30px]"
+      class="text-white cursor-pointer absolute top-[12px] left-[12px] dk:top-7 dk:left-[33px] text-[20px] dk:text-[30px]"
       @click="$emit('back')"
     />
 
@@ -18,12 +18,12 @@ const $emit = defineEmits(["back"]);
     </h2>
 
     <div
-      class="gradient text-center h-[50vh] px-[20px] absolute bottom-0 left-0 w-full rounded-t-[20px] pt-[160px]"
+      class="gradient text-center h-[50vh] px-[20px] absolute bottom-0 left-0 w-full rounded-t-[20px] pt-[150px]"
     >
       <ImgHolder
-        src="assets/images/image 57.png"
+        src="assets/images/gift.png"
         class="absolute bottom-[calc(100%-140px)] left-[50%] translate-x-[-50%] w-[90%] max-w-[336px]"
-        aspect="[336/280]"
+        
       />
       <h3 class="font-bold mb-[13px]">
         <span class="text-xl">50thb voucher</span><br />

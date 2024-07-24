@@ -8,7 +8,7 @@ const $emit = defineEmits(["back"]);
   >
     <Icon
       name="arrow-left"
-      class="cursor-pointer absolute top-[12px] left-[12px] dk:top-7 dk:left-[33px] text-[20px] dk:text-[30px]"
+      class="text-white cursor-pointer absolute top-[12px] left-[12px] dk:top-7 dk:left-[33px] text-[20px] dk:text-[30px]"
       @click="$emit('back')"
     />
     <div class="dk:mb-5">
@@ -21,7 +21,6 @@ const $emit = defineEmits(["back"]);
       <ImgHolder
         src="assets/images/image 99.png"
         class="m-[22px_auto_10px] w-[90%] max-w-[336px]"
-        aspect="[336/280]"
       />
       <p class="text-sm px-5 dk:mb-4 font-fs">
         To claim this, simply flash the QR code stored in your wallet on event

@@ -4,7 +4,7 @@
   <div class="relative bg-[url(public/assets/images/bg-3.jpg)] bg-cover w-full pt-[15px] text-center ">
     <Icon
       name="arrow-left"
-      class="cursor-pointer absolute top-[12px] left-[12px] dk:top-7 dk:left-[33px] text-[20px] dk:text-[30px]"
+      class="text-white cursor-pointer absolute top-[12px] left-[12px] dk:top-7 dk:left-[33px] text-[20px] dk:text-[30px]"
       @click="$emit('back')"
     />
 

@@ -19,7 +19,7 @@
     >
       <Icon
         name="arrow-left"
-        class="absolute top-[32px] left-[19px] dk:left-10 cursor-pointer dk:text-[30px]"
+        class="absolute top-[32px] left-[19px] dk:left-10 cursor-pointer dk:text-[30px] text-white"
         @click="$emit('back')"
       />
 

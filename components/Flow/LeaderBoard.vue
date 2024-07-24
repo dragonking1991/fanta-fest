@@ -35,7 +35,7 @@
         <ImgHolder
           src="assets/images/Group 90546.png"
           class="m-auto mb-[11.5px] dk:mb-4 w-[50%] dk:w-full "
-          aspect="[336/280]"
+          
         />
         <h3 class="text-xlm dk:text-xlx text-blue uppercase mb-2">PLAY STATION 5</h3>
         <p class="text-sx font-bold font-fs">
