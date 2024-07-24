@@ -16,7 +16,7 @@
     <img
       src="public/assets/images/dk/About.png"
       alt="image"
-      class="absolute top-0 left-2 cursor-pointer"
+      class="absolute top-0 left-2 cursor-pointer z-10"
       @click="$emit('linkAbout')"
     />
     <img
