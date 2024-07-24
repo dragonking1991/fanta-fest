@@ -51,16 +51,20 @@ const $emit = defineEmits("select");
   @media (min-width: 780px) {
     padding: 50px 10px;
   }
-}
-:deep {
-  .swiper-button-next {
+
+  ::v-deep(.swiper-button-next) {
     right: -4px;
   }
-  .swiper-button-prev {
+  ::v-deep(.swiper-button-prev) {
     left: -4px;
   }
-  .swiper-button-next,
-  .swiper-button-prev {
+  ::v-deep(.swiper-button-next) {
+    color: #fff;
+    &::after {
+      font-size: 20px;
+    }
+  }
+  ::v-deep(.swiper-button-prev) {
     color: #fff;
     &::after {
       font-size: 20px;

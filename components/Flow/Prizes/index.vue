@@ -69,7 +69,7 @@
       </p>
 
       <div
-        class="overflow-auto max-h-[35vh] dk:max-h-none flex flex-wrap dk:flex-nowrap gap-[9.31px] px-[30px] dk:px-0 mx-[10px] dk:mx-0 pb-[10px] dk:overflow-y-auto"
+        class="overflow-auto max-h-[35vh] dk:max-h-none flex flex-wrap justify-center dk:flex-nowrap gap-[9.31px] px-[30px] dk:px-0 mx-[10px] dk:mx-0 pb-[10px] dk:overflow-y-auto "
       >
         <div
           class="bg-white aspect-square w-[30%] dk:w-[102px] text-xs rounded-[16px] p-3 whitespace-nowrap"

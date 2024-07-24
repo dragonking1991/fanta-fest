@@ -1,5 +1,5 @@
 <script setup>
-const flow = ref(-2);
+const flow = ref(-1);
 
 const back = () => {
   flow.value = -1;

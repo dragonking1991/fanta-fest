@@ -50,7 +50,7 @@ const prizes = ref([
       />
     </div>
 
-    <div>
+    <div class="relative z-10">
       <h2
         class="gradient text-lg dk:text-xl font-bold p-[5px] dk:py-[8px] mb-[10px]"
       >

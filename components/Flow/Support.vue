@@ -1,4 +1,6 @@
 <script setup>
+import { scrollTo, isInViewport } from "~/utils/helper";
+
 const list = ref([
   {
     title:
@@ -61,6 +63,13 @@ const list = ref([
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla posuere justo vel orci faucibus ornare. Nam tempus felis sed nulla commodo, vel maximus dolor.",
   },
 ]);
+
+const wrapper = ref(null);
+
+const scrollNext = () => {
+  const items = [...wrapper.value.querySelectorAll(".item")];
+  items.length && scrollTo(items[items.length - 1]);
+};
 </script>
 
 <template>
@@ -80,24 +89,40 @@ const list = ref([
         SUPPORT
       </h2>
       <div class="dk:flex justify-between items-start">
-        <div
-          class="text-sx dk:text-base overflow-auto max-h-[calc(100vh-200px)] p-5 dk:p-0 dk:max-w-[739px]"
-        >
-          <Accordion v-for="item in list">
-            <template #title>
-              {{ item.title }}
-            </template>
-            <template #content>
-              {{ item.desc }}
-            </template>
-          </Accordion>
+        <div class="relative">
+          <div
+            class="text-sx dk:text-base overflow-auto max-h-[calc(100vh-250px)] p-5 dk:p-0 dk:max-w-[739px]"
+            ref="wrapper"
+          >
+            <Accordion v-for="item in list" class="item">
+              <template #title>
+                {{ item.title }}
+              </template>
+              <template #content>
+                {{ item.desc }}
+              </template>
+            </Accordion>
+          </div>
+          <div class="absolute bottom-[-32px] left-0 w-full z-10">
+            <div
+              class="bg-gradient-to-t from-orange/70 to-transparent h-5 dk:hidden"
+            ></div>
+            <div class="h-8 flex justify-center items-center">
+              <Icon
+                name="arrow-down"
+                class="text-white text-[20px]"
+                @click="scrollNext"
+              />
+            </div>
+          </div>
         </div>
-        <div class="text-center p-5 pt-3 dk:max-w-[280px]">
-          <!-- <Icon name="arrow-down" class="m-auto"/> -->
-          <p class="font-fs text-xs dk:text-base mt-[17px]">
+        <div class="text-center p-5 pt-3 dk:pt-0 dk:max-w-[280px] relative">
+          <p class="font-fs text-xs dk:text-base mt-[17px] dk:mt-0">
             Can’t find an answer for your question?
           </p>
-          <Button type="full" variation="black" class="dk:mt-3">CONTACT CALL CENTER</Button>
+          <Button type="full" variation="black" class="dk:mt-3"
+            >CONTACT CALL CENTER</Button
+          >
         </div>
       </div>
     </div>
