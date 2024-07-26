@@ -3,27 +3,26 @@ export const useAppStore = defineStore('app', () => {
   const history = ref([flow.value])
   const backCount = ref(0)
 
+  const currentIndex = computed(() => {
+    return history.value[history.value.length - (1 + backCount.value)]
+  })
+
   const backIndex = computed(() => {
-    return history.value.length > 2
-      ? history.value[history.value.length - 2 - backCount.value]
+    return history.value.length > 1
+      ? history.value[history.value.length - (2 + backCount.value)]
       : -1
   })
 
-  const handlePage = (index) => {
-    console.log('page', backIndex.value, backCount.value, history.value);
-    flow.value = index;
-    backCount.value > 1
-      ? backCount.value--
-      : (backCount.value = 0)
+  const handlePage = (index, isBack = false) => {
     history.value = [...history.value, index];
+    flow.value = index;
+    !isBack && (backCount.value = 0)
   }
 
   const back = () => {
-    console.log('===================');
-    console.log('back', backIndex.value, backCount.value, history.value);
     backCount.value && backCount.value++
-    handlePage(backIndex.value);
-    !backCount.value && backCount.value++
+    handlePage(backIndex.value, true);
+    backCount.value++
   };
 
   const forward = () => {

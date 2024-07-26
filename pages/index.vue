@@ -43,6 +43,7 @@ const {
     <FlowAnnouncement v-if="flow === 3.1" @back="back" />
 
     <FlowEnterPin v-if="flow === 4" @back="back" @linkPrizes="linkPrizes" />
+    <FlowEnterPinInstantWin v-if="flow === 4.1" @back="back" @linkWallet="linkWallet" />
 
     <FlowPrizes
       v-if="flow === 5"
