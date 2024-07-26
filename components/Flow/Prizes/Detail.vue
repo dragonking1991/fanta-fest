@@ -18,11 +18,11 @@ const $emit = defineEmits(["back"]);
     </h2>
 
     <div
-      class="gradient text-center h-[50vh] px-[20px] absolute bottom-0 left-0 w-full rounded-t-[20px] pt-[150px]"
+      class="gradient text-center h-[50vh] px-[20px] absolute bottom-0 left-0 w-full rounded-t-[20px] pt-[100px]"
     >
       <ImgHolder
         src="assets/images/gift.png"
-        class="absolute bottom-[calc(100%-140px)] left-[50%] translate-x-[-50%] w-[90%] max-w-[336px]"
+        class="absolute bottom-[calc(100%-100px)] left-[50%] translate-x-[-50%] w-[90%] max-w-[336px]"
         
       />
       <h3 class="font-bold mb-[13px]">

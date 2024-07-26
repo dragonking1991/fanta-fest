@@ -1,49 +1,78 @@
 export const useAppStore = defineStore('app', () => {
   const flow = ref(-1);
+  const history = ref([flow.value])
+  const backCount = ref(0)
+
+  const backIndex = computed(() => {
+    return history.value.length > 2
+      ? history.value[history.value.length - 2 - backCount.value]
+      : -1
+  })
+
+  const handlePage = (index) => {
+    console.log('page', backIndex.value, backCount.value, history.value);
+    flow.value = index;
+    backCount.value > 1
+      ? backCount.value--
+      : (backCount.value = 0)
+    history.value = [...history.value, index];
+  }
 
   const back = () => {
-    flow.value = -1;
+    console.log('===================');
+    console.log('back', backIndex.value, backCount.value, history.value);
+    backCount.value && backCount.value++
+    handlePage(backIndex.value);
+    !backCount.value && backCount.value++
   };
 
+  const forward = () => {
+    backCount.value && backCount.value--
+    console.log(forwardIndex);
+    handlePage(forwardIndex);
+  };
   const linkHow = () => {
-    flow.value = 0;
+    handlePage(0);
   };
   const linkSupport = () => {
-    flow.value = 1;
+    handlePage(1);
   };
   const linkAbout = () => {
-    flow.value = 2;
+    handlePage(2);
   };
   const linkLeaderBoard = () => {
-    flow.value = 3;
+    handlePage(3);
   };
   const linkEnterPin = () => {
-    flow.value = 4;
+    handlePage(4);
   };
   const linkPrizes = () => {
-    flow.value = 5;
+    handlePage(5);
   };
   const linkPrizesDetail = () => {
-    flow.value = 6;
+    handlePage(6);
   };
   const linkPrizesReward = () => {
-    flow.value = 7;
+    handlePage(7);
   };
   const linkPrizesForm = () => {
-    flow.value = 8;
+    handlePage(8);
   };
   const linkWallet = () => {
-    flow.value = 9;
+    handlePage(9);
   };
   const linkWalletHistory = () => {
-    flow.value = 10;
+    handlePage(10);
   };
   const linkRedemption = () => {
-    flow.value = 11;
+    handlePage(11);
   };
 
   return {
-    flow, back, linkHow,
+    flow, history,
+    back,
+    forward,
+    linkHow,
     linkSupport,
     linkAbout,
     linkLeaderBoard,

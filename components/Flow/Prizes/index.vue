@@ -19,7 +19,6 @@
     <ImgHolder
       src="assets/images/image 99.png"
       class="m-[22px_auto_10px] w-[90%] max-w-[336px]"
-      
     />
 
     <div class="mt-[10px] px-5">
@@ -34,7 +33,7 @@
 
     <div class="text-center">
       <div
-        class="p-1 overflow-y-auto mt-[6px] dk:mt-8 pb-[7px] px-[10px] dk:p-0 dk:mb-4"
+        class=" p-1 overflow-y-auto mt-[6px] dk:mt-8 pb-[7px] px-[10px] dk:p-0 dk:mb-4"
       >
         <div
           class="flex gap-[3px] uppercase font-sm text-center whitespace-nowrap dk:justify-center"
@@ -69,7 +68,7 @@
       </p>
 
       <div
-        class="overflow-auto max-h-[35vh] dk:max-h-none flex flex-wrap justify-center dk:flex-nowrap gap-[9.31px] px-[30px] dk:px-0 mx-[10px] dk:mx-0 pb-[10px] dk:overflow-y-auto "
+        class="scroll-style overflow-auto max-h-[35vh] dk:max-h-none flex flex-wrap justify-center dk:flex-nowrap gap-[9.31px] px-[30px] dk:px-0 mx-[10px] dk:mx-0 pb-[10px] dk:overflow-y-auto"
       >
         <div
           class="bg-white aspect-square w-[30%] dk:w-[102px] text-xs rounded-[16px] p-3 whitespace-nowrap"
@@ -94,4 +93,30 @@
   </div>
 </template>
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+.scroll-style {
+  &::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+  }
+  
+  /* Track */
+  &::-webkit-scrollbar-track {
+    // box-shadow: inset 0 0 5px grey;
+    background: #fff;
+    border-radius: 5px;
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: linear-gradient(
+      267.54deg,
+      #128dff -19.23%,
+      #193abe 12.56%,
+      #9747ff 52.01%,
+      #ff2fd1 94.98%
+    );
+    border-radius: 5px;
+  }
+}
+</style>

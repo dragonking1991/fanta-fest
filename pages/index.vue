@@ -1,6 +1,6 @@
 <script setup>
 const store = useAppStore();
-const { flow } = storeToRefs(store);
+const { flow, history } = storeToRefs(store);
 
 const {
   back,
