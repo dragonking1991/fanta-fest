@@ -27,19 +27,19 @@ export default defineNuxtConfig({
     "storesDirs": ['./stores/**', './custom-folder/stores/**'],
   },
 
-  "app": {
-    // "baseURL": "/onexp-fanta-fest",
-    "head": {
-      "link": [
-        {
-          "rel": "icon",
-          "type": "image/ico",
-          "href": "./favicon.ico",
-        },
-      ],
-      "script": [],
-    },
-  },
+  // "app": {
+  //   "baseURL": "/onexp-fanta-fest",
+  //   "head": {
+  //     "link": [
+  //       {
+  //         "rel": "icon",
+  //         "type": "image/ico",
+  //         "href": "./favicon.ico",
+  //       },
+  //     ],
+  //     "script": [],
+  //   },
+  // },
 
   compatibilityDate: "2024-07-03",
 });
