@@ -21,7 +21,7 @@ const $emit = defineEmits(["back"]);
       class="gradient text-center h-[50vh] px-[20px] absolute bottom-0 left-0 w-full rounded-t-[20px] pt-[100px]"
     >
       <ImgHolder
-        src="assets/images/gift.png"
+        src="assets/images/Gift.png"
         class="absolute bottom-[calc(100%-100px)] left-[50%] translate-x-[-50%] w-[90%] max-w-[336px]"
         
       />

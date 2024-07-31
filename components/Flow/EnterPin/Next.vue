@@ -26,10 +26,10 @@ const bottleAnimate = ref(null);
             ><br />
             <small class="text-xlx">POINTS</small>
           </div>
-          <img
-            src="public/assets/images/Bottle.png"
-            alt="image"
-            class="m-auto"
+          <ImgHolder
+            src="assets/images/bottle.png"
+            aspect="[151/493]"
+            class="mx-auto max-w-[151px]"
           />
           <div
             class="absolute top-0 left-[50%] translate-x-[-50%] animate-wave"
@@ -38,7 +38,11 @@ const bottleAnimate = ref(null);
               '--process': process + '%',
             }"
           >
-            <img src="public/assets/images/Bottle2.png" alt="image" />
+            <ImgHolder
+              src="assets/images/bottle2.png"
+              aspect="[151/493]"
+              class="mx-auto w-[100%] max-w-[151px]"
+            />
           </div>
         </div>
       </div>

@@ -54,7 +54,7 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        'fs': ['FantaSan', 'Helvetica', 'Arial', 'sans-serif'],
+        'fs': ['FantaSans', 'Helvetica', 'Arial', 'sans-serif'],
         'fp': ['FantaPop', 'Helvetica', 'Arial', 'sans-serif'],
         'tccc': ['TCCCUnity', 'Helvetica', 'Arial', 'sans-serif'],
       },
