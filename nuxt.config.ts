@@ -1,12 +1,12 @@
 export default defineNuxtConfig({
   "modules": ["@nuxt/image", "@pinia/nuxt",'nuxt-svgo'],
-  "ssr": false,
+  // "ssr": false,
 
-  "devServer": {
-    "https": true,
-    "port": 3000,
-    "host": "0.0.0.0",
-  },
+  // "devServer": {
+  //   "https": true,
+  //   "port": 3000,
+  //   "host": "0.0.0.0",
+  // },
 
   "postcss": {
     "plugins": {
@@ -28,7 +28,7 @@ export default defineNuxtConfig({
   },
 
   "app": {
-    "baseURL": "/onexp-fanta-fest",
+    // "baseURL": "/onexp-fanta-fest",
     "head": {
       "link": [
         {
